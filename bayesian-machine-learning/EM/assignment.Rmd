@@ -9,7 +9,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
 
 The text above is based on the Coursera course named "Bayesian Methods
@@ -35,7 +35,7 @@ from scipy.stats import multivariate_normal as dmvnorm # multiv. normal
 ```
 
 
-```{python, engine.path = "/Users/brunawundervald/anaconda3/bin/python3", results='hide', fig.width=3, fig.height=3, fig.align='center'}
+```{python, engine.path = "/Users/brunawundervald/.conda/envs/py38/bin/python", results='hide', fig.width=3, fig.height=3, fig.align='center'}
 # Reading data 
 samples = np.load('samples.npz')
 X = samples['data']          # 2 columns of data to be clustered
